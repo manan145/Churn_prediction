@@ -49,8 +49,8 @@ def main():
         totalcharges = st.number_input('The total amount charged to the customer',min_value=0, max_value=10000, value=0)
 
         st.subheader("Services signed up for")
-        mutliplelines = st.selectbox("Does the customer have multiple lines",('Yes','No','No phone service'))
         phoneservice = st.selectbox('Phone Service:', ('Yes', 'No'))
+        mutliplelines = st.selectbox("Does the customer have multiple lines",('Yes','No','No phone service'))
         internetservice = st.selectbox("Does the customer have internet service", ('DSL', 'Fiber optic', 'No'))
         onlinesecurity = st.selectbox("Does the customer have online security",('Yes','No','No internet service'))
         onlinebackup = st.selectbox("Does the customer have online backup",('Yes','No','No internet service'))
